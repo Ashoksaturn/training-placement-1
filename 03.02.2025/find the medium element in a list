@@ -1,0 +1,11 @@
+def find_min_element(lst):
+    if not lst:  
+        return None  
+    min_element = lst[0] 
+    for num in lst:
+        if num < min_element:
+            min_element = num
+    return min_element
+my_list = [10, 23, 45, 67, 12, 89, 34]
+min_element = find_min_element(my_list)
+print("Minimum element in the list:", min_element)
